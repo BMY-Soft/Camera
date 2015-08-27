@@ -275,7 +275,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
 		public void take_picture() {
 			if(camera == null) return;
-			camera.takePicture(null, null, pictureCallback);
+			try {
+				camera.takePicture(null, null, pictureCallback);
+			} catch(RuntimeException e) {
+				e.printStackTrace();
+				(new AlertDialog.Builder(MainActivity.this)).setTitle(R.string.take_error).setMessage(e.getMessage()).show();
+			}
 		}
 
 		public String get_file_name_from_date() {

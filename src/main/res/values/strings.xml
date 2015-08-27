@@ -7,4 +7,5 @@
 	<string name="save_error">Failed to save picture</string>
 	<string name="about">About</string>
 	<string name="license_text">Copyright 2015 libdll.so\n\nThis program is free software; you can redistribute it and/or modify it under the terms of the GNU GPL 2 or any later version.\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</string>
+	<string name="take_error">Failed to take picture</string>
 </resources>
