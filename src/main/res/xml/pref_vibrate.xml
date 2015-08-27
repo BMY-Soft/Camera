@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+		android:key="enable_vibrate"
+		android:title="@string/pref_title_enable_vibrate"
+		android:defaultValue="false" />
+	<ListPreference
+	  android:dependency="enable_vibrate"
+	  android:key="vibrate_time"
+	  android:title="When"
+	  android:entries="@array/when"
+	  android:entryValues="@array/when"
+	  android:defaultValue="Taken"
+	/>
+</PreferenceScreen>
